@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/uniqueblue"
+    tools:context=".SplashFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/white"
+        android:contentDescription="Medicare"/>
+
+    <TextView
+        android:id="@+id/textLogo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:text="Skin Firts"
+        android:textAlignment="center"
+        android:textFontWeight="100"
+        android:fontFamily="@font/leaguespartan"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLogo"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/leaguespartan"
+        android:text="Dermatology center"
+        android:textSize="12sp"
+        android:textFontWeight="600"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeFragment">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/blue"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/textLogo"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:text="Skin Firts"
+        android:textAlignment="center"
+        android:textFontWeight="100"
+        android:fontFamily="@font/leaguespartan"
+        android:textSize="48sp"
+        android:textColor="@color/uniqueblue" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textLogo"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/leaguespartan"
+        android:text="Dermatology center"
+        android:textSize="12sp"
+        android:textFontWeight="600"
+        android:textColor="@color/uniqueblue" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/leaguespartan"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:textSize="12sp"
+        android:textFontWeight="300"
+        android:textColor="#070707" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcome_text"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/leaguespartan"
+        android:text="Log In"
+        android:textFontWeight="600"
+        android:gravity="center"
+        android:backgroundTint="@color/uniqueblue"
+        android:layout_marginBottom="1dp"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/leaguespartan"
+        android:layout_below="@id/btnLogin"
+        android:textSize="20sp"
+        android:textFontWeight="600"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CAD6FF"
+        android:text="Sign Up"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/uniqueblue"/>
+
+
+</RelativeLayout>

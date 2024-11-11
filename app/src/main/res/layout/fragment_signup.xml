@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignupFragment"
+        android:padding="24dp">
+
+        <ImageButton
+            android:id="@+id/backArrow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerInside"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/back"
+            android:layout_alignParentStart="true"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/newAccountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Account"
+            android:fontFamily="@font/leaguespartan"
+            android:textFontWeight="600"
+            android:textColor="@color/uniqueblue"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/fullNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:fontFamily="@font/leaguespartan"
+            android:textFontWeight="600"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_below="@id/newAccountText"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/fullNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullNameLabel"
+            android:padding="12dp"
+            android:hint="Jane Doe"
+            android:background="#ECF1FF"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/leaguespartan"
+            android:textFontWeight="600"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_below="@id/fullNameInput"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailLabel"
+            android:padding="12dp"
+            android:hint="email@example.com"
+            android:background="#ECF1FF"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:fontFamily="@font/leaguespartan"
+            android:textFontWeight="600"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_below="@id/emailInput"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneLabel"
+            android:padding="12dp"
+            android:hint="+123456789"
+            android:background="#ECF1FF"
+            android:inputType="phone"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of birth"
+            android:fontFamily="@font/leaguespartan"
+            android:textFontWeight="600"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_below="@id/phoneInput"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/dateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateLabel"
+            android:padding="12dp"
+            android:hint="DD/MM/YYYY"
+            android:background="#ECF1FF"
+            android:inputType="date"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:fontFamily="@font/leaguespartan"
+            android:textFontWeight="600"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_below="@id/dateInput"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/passwordEntering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLabel"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:background="#ECF1FF"
+                android:paddingEnd="48dp" />
+
+            <ImageButton
+                android:id="@+id/eyeIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Show password"
+                android:src="@drawable/eye" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/agreeText"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="By continuing, you agree to"
+            android:fontFamily="@font/leaguespartan"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_below="@id/passwordEntering"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/termsAndPolicyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/agreeText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/termsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/leaguespartan"
+                android:textStyle="bold"
+                android:textColor="@color/uniqueblue"
+                android:textSize="12sp"
+                android:text="Terms of Use"
+                android:textFontWeight="600"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/andText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/leaguespartan"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:text=" and " />
+
+            <TextView
+                android:id="@+id/policyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/leaguespartan"
+                android:textStyle="bold"
+                android:textColor="@color/uniqueblue"
+                android:textSize="12sp"
+                android:text="Privacy Policy"
+                android:textFontWeight="600"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:fontFamily="@font/leaguespartan"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:backgroundTint="@color/uniqueblue"
+            android:layout_below="@id/termsAndPolicyText"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/orSignUpWithText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or sign up with"
+            android:fontFamily="@font/leaguespartan"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:layout_below="@id/signupButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:id="@+id/socialButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/orSignUpWithText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp">
+
+            <ImageButton
+                android:id="@+id/googleButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/google"
+                android:contentDescription="Google"
+                android:background="#CAD6FF"/>
+
+            <ImageButton
+                android:id="@+id/facebookButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/facebook"
+                android:contentDescription="Facebook"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#CAD6FF"/>
+
+            <ImageButton
+                android:id="@+id/fingerprintButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/fingerprint"
+                android:contentDescription="Fingerprint"
+                android:background="#CAD6FF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/socialButtons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/alreadyHaveAccountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/leaguespartan"
+                android:textFontWeight="600"
+                android:textSize="18sp"
+                android:text="Already have an account? " />
+
+            <TextView
+                android:id="@+id/logInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/leaguespartan"
+                android:text="Log in"
+                android:textColor="@color/uniqueblue"
+                android:textFontWeight="600"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
